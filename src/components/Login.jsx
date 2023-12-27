@@ -33,7 +33,7 @@ function Login() {
   return (
     loading ? (<LoadingSpinner/>) : (
         <div
-    className='flex items-center justify-center w-full m-8'
+    className='flex items-center justify-center w-full m-4'
     >
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
         <div className="mb-2 flex justify-center">
@@ -52,7 +52,7 @@ function Login() {
                     </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-        <form onSubmit={handleSubmit(login)} className='mt-8'>
+        <form onSubmit={handleSubmit(login)} className='m-2'>
             <div className='space-y-5'>
                 <Input
                 label="Email: "
